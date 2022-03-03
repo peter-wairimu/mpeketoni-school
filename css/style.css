@@ -130,3 +130,26 @@ nav button{
 .nav_menu a:hover{
     color: var(--color-bg2);
 }
+
+
+/* header styling */
+
+header{
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 100vh;
+    margin-bottom: 5rem;
+}
+
+.header_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.header_container p{
+    margin: 1rem 0 2.4rem;
+}
