@@ -153,3 +153,79 @@ header{
 .header_container p{
     margin: 1rem 0 2.4rem;
 }
+
+
+/* categories styling */
+
+.categories{
+    background: var(--color-bg1);
+    height: 29rem;
+}
+.categories h1{
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.categories_container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.categories_left{
+    margin-right: 4rem;
+}
+
+.categories_left p{
+    margin: 1rem 0 3rem;
+
+}
+
+.categories_right{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.3rem;
+}
+
+.category{
+    background-color: var(--color-bg2);
+    padding: 2rem;
+    border-radius: 2.5rem;
+    transition: var(--transition);
+
+}
+
+.category:hover{
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.4);
+
+}
+
+.category_icon{
+    background-color: var(--color-primary);
+    font-size: 2rem;
+    padding: .7rem;
+    border-radius: 3rem;
+}
+
+.category:nth-child(1) .category_icon{
+    background-color: #FFC300;
+}
+
+.category:nth-child(2) .category_icon{
+    background-color: #5463FF;
+}
+
+.category:nth-child(3) .category_icon{
+    background-color: #FF1818;
+}
+.category:nth-child(4) .category_icon{
+    background-color: #573391;
+}
+.category:nth-child(6) .category_icon{
+    background-color: #1C658C;
+}
+.category h5{
+    margin: 2rem 0 1rem;
+}
+
+.category p{
+    font-size: .85rem;
+}
