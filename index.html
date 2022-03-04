@@ -7,6 +7,8 @@
     <title>School web</title>
     <!-- bootstrap icon cdn link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -287,14 +289,150 @@
                     Sequi enim recusandae iusto soluta eos et ducimus porro sed praesentium voluptate.
                 </p>
             </div>
-        
-        
-        </article>
-
+             </article>
     </div>
-
 </section>
 
-</body>
+<!-- testimonial section -->
+
+<section class="container testimonials_container mySwiper">
+    <h2 style="text-align: center;">Students Testimonials</h2>
+    <div class="swiper-wrapper">
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="assets/person.png" class="image" alt="avatar">
+            </div>
+            <div class="testimonial_info">
+                <h5>Denis Itumbi</h5>
+                <small>Software Developer</small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sequi enim recusandae iusto soluta eos et ducimus porro sed praesentium voluptate.
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="assets/person1.png" class="image" alt="avatar">
+            </div>
+            <div class="testimonial_info">
+                <h5>Grace Nduku</h5>
+                <small>UI/UX Designer</small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi enim recusandae iusto soluta eos et ducimus porro sed praesentium voluptate.
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="assets/person2.png" class="image" alt="avatar">
+            </div>
+            <div class="testimonial_info">
+                <h5>Joan Shanikikwa</h5>
+                <small>Product Manager</small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi enim recusandae iusto soluta eos et ducimus porro sed praesentium voluptate.
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="assets/person3.png" class="image" alt="avatar">
+            </div>
+            <div class="testimonial_info">
+                <h5>Christine Wacheke</h5>
+                <small>Interior Designer</small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi enim recusandae iusto soluta eos et ducimus porro sed praesentium voluptate.
+                </p>
+            </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+            <div class="avatar">
+                <img src="assets/person4.png" class="image" alt="avatar">
+            </div>
+            <div class="testimonial_info">
+                <h5>John Doe</h5>
+                <small>Student</small>
+            </div>
+            <div class="testimonial_body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi enim recusandae iusto soluta eos et ducimus porro sed praesentium voluptate.
+                </p>
+            </div>
+        </article>
+       
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+
+</section>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/index.js"></script>
+
+<script>
+   var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        // Responsive breakpoints
+        breakpoints: {
+            // when window width is <= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            },
+            // when window width is <= 480px
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
+            // when window width is <= 640px
+            640: {
+                slidesPerView: 3,
+                spaceBetween: 10
+            },
+            // when window width is <= 768px
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 10
+            },
+            // when window width is <= 992px
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 10
+            },
+            // when window width is <= 1200px
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 10
+            }
+        }
+    });
+</script>
+</body>
 </html>
