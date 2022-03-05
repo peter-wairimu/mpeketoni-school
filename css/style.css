@@ -113,9 +113,11 @@ nav{
     align-items: center;
 }
 
+
 nav button{
     display: none;
 }
+
 .nav_menu li a{
     font-size: 1.5rem
 
@@ -124,6 +126,7 @@ nav button{
     display: flex;
     align-items: center;
     gap: 4rem;
+
 }
 .nav_menu a{
     font-size: .9rem;

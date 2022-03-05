@@ -22,6 +22,7 @@ faqs.forEach(faq => {
 })
 
 
+
 // show/hide navbar on tablet
 const menu = document.querySelector(".nav_menu");
 const menuBtn = document.querySelector("#open-menu-btn");
@@ -37,11 +38,10 @@ menuBtn.addEventListener("click", () => {
 
 
 // close navbar on tablet
-
 const closeNav = () => {
     menu.style.display = "none";
-    menuBtn.style.display = "inline-block";
     closeBtn.style.display = "none";
+    menuBtn.style.display = "inline-block";
 }
 
 closeBtn.addEventListener("click", closeNav)
