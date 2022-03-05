@@ -22,5 +22,27 @@ faqs.forEach(faq => {
 })
 
 
+// show/hide navbar on tablet
+const menu = document.querySelector(".nav_menu");
+const menuBtn = document.querySelector("#open-menu-btn");
+const closeBtn = document.querySelector("#close-menu-btn");
 
+
+menuBtn.addEventListener("click", () => {
+    menu.style.display = "flex";
+    closeBtn.style.display = "inline-block";
+    menuBtn.style.display = "none";
+    
+})
+
+
+// close navbar on tablet
+
+const closeNav = () => {
+    menu.style.display = "none";
+    menuBtn.style.display = "inline-block";
+    closeBtn.style.display = "none";
+}
+
+closeBtn.addEventListener("click", closeNav)
 
