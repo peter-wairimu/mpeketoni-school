@@ -1,4 +1,4 @@
-## Mpekeketoni School
+## Mpeketoni School
 
 
 
